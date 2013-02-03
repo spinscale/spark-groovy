@@ -1,0 +1,5 @@
+Spark groovy - syntactic groovy sugar on top of the spark web framework
+
+This readme contains some helpers for the spark webframework, which simplify development with groovy.
+
+For more info, check http://spinscale.github.com/2013-02-rapid-web-application-development-with-spark-groovy-jrebel.html

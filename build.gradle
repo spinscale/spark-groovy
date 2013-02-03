@@ -1,0 +1,21 @@
+apply plugin: 'groovy'
+apply plugin: 'idea'
+
+repositories {
+    mavenCentral()
+    maven { url "http://www.sparkjava.com/nexus/content/repositories/spark/" }
+    maven { url "https://raw.github.com/neuland/jade4j/master/releases" }
+}
+
+configurations {
+    all*.exclude group: 'asm'
+}
+
+dependencies {
+    compile 'spark:spark:0.9.9.4-SNAPSHOT'
+    compile 'de.neuland:jade4j:0.3.8'
+    compile 'org.codehaus.groovy:groovy-all:2.1.0-beta-1'
+    compile 'org.slf4j:slf4j-log4j12:1.6.4'
+    testCompile 'junit:junit:4.11'
+}
+
